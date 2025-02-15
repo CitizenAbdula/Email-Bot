@@ -51,24 +51,23 @@ def send_email(receiver, subject, message):
     # Start Trsut Layer Security encryption to secure the connection 
     server.starttls()
     # Login to the server with email and password
-    server.login('futurefrontsummit@gmail.com', my_password)
+    server.login('your_email, my_password)
     # Send email to the recipient with the message 
     email = EmailMessage()
-    email['From'] = 'futurefrontsummit@gmail.com'
+    email['From'] = 'Your_email'
     email['To'] = receiver
     email['Subject'] = subject
     email.set_content(message)
     server.send_message(email)
-    server.sendmail('futurefrontsummit@gmail.com', 
-                    'tebogomabuzaa@gmail.com', 
+    server.sendmail('Your_email', 
+                    'Receiver_email', 
                     'Hello, this is a test email.')
 
 email_list = {
-    'tebogo': 'tebogomabuzaa@gmail.com',
-    'mabuza': 'mabuza.firstreadmedia@gmail.com',
-    'junior': 'tebogojr3@gmail.com',
-    'future': 'futurefrontsummit@gmail.com',
-    'john': 'tmabuza402@gmail.com',
+    'Name 1': 'Name1@gmail.com',
+    'Name 2': 'Name2@gmail.com',
+    'Name 3': 'Name3@gmail.com',
+
 
 
 }
